@@ -67,13 +67,16 @@ class PopChart extends Component {
 
   render() {
     return (
-      <Chart
-        options={this.state.options}
-        series={this.state.series}
-        type="bar"
-        height="450"
-        width="100%"
-      />
+      <React.Fragment>
+        <Chart
+          options={this.state.options}
+          series={this.state.series}
+          type="bar"
+          height="450"
+          width="100%"
+        />
+        <button>Horizontal</button>
+      </React.Fragment>
     );
   }
 }
