@@ -65,6 +65,8 @@ class PopChart extends Component {
     };
   }
 
+  onClick = () => {};
+
   render() {
     return (
       <React.Fragment>
@@ -75,7 +77,7 @@ class PopChart extends Component {
           height="450"
           width="100%"
         />
-        <button>Horizontal</button>
+        <button onClick={this.onClick}>Horizontal</button>
       </React.Fragment>
     );
   }
